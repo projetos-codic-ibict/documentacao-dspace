@@ -80,7 +80,7 @@ Instale os seguintes softwares no seu sistema operacional
   db.password = (insira a senha do usuário postgres)
   ```
 
-  **E-mail**\
+  **E-mail**
 
   Caso tenha um servidor SMTP para envio de e-mails, configure as variáveis na seção “EMAIL CONFIGURATION”.
 
