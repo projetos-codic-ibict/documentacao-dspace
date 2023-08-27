@@ -20,7 +20,7 @@ Instale os seguintes softwares no seu sistema operacional
 - Apache Tomcat 9;\
   O diretório onde o Apache Tomcat está descompactado será chamado `[tomcat-dir]`
   Onde: `[tomcat-dir]` será tratado como diretório raiz do tomcat;
-- Postgres versão 12, com a extensão pgcrypto habilitada;
+- PostgreSQL versão 12, com a extensão pgcrypto habilitada;
 - Yarn (https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable)
 - Apache Solr 8.x 
   *Orientações:*
