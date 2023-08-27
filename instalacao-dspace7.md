@@ -155,7 +155,7 @@ Instale os seguintes softwares no seu sistema operacional
 
   Mais baixo no arquivo, preencha a variável `defaultLanguage` com “pt-BR”:
   ```
-  defaultLanguage: pt_BR
+  defaultLanguage: pt-BR
   ```
 
 - Compile e rode o projeto, executando os comandos:
