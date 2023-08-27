@@ -76,7 +76,6 @@ Instale os seguintes softwares no seu sistema operacional
   
   ```
   db.url = jdbc:postgresql://(IP do seu banco de dados):(porta de acesso ao banco de dados)/(nome da sua base de dados)
-  db.
   db.username = (insira o nome do usuário do postgres)
   db.password = (insira a senha do usuário postgres)
   ```
