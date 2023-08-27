@@ -43,7 +43,11 @@ Instale os seguintes softwares no seu sistema operacional
   ```
   
 - Habilite a extensão pgcrypto nessa nova base:
-  ```psql --username=postgres (nome da sua base) -c "CREATE EXTENSION pgcrypto;"```
+  ```
+  
+  psql --username=postgres (nome da sua base) -c "CREATE EXTENSION pgcrypto;"
+
+  ```
 - Baixe o código fonte do backend do DSpace 7.6, link: https://github.com/DSpace/DSpace/archive/refs/tags/dspace-7.6.zip
 - Descompacte o código fonte do Backend em um diretório de preferência. 
 - A partir de agora, chamaremos o diretório do código fonte descompactado de `[dspace-source-dir]`;
