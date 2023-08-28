@@ -2,7 +2,7 @@
 
 **Importante:**
 - Este roteiro trata todas localizações de diretórios com “[]”, ex.: `[dspace-install-dir]`. Isso significa que você sempre terá que substituir essas marcações pelo real diretório;
-- Todos valores a serem substituídos entre “()”, ex.: (informe o nome do usuário)
+- Todos valores a serem substituídos entre “()”, ex.: `(informe o nome do usuário)`, ficaria `EXAMPLE_USER`;
 
 
 ## Requisitos recomendados de hardware
