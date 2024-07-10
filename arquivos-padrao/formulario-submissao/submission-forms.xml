@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE input-forms
+  SYSTEM "submission-forms.dtd">
+<input-forms><form-definitions><form name="tdpage1"><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier/>
+         <repeatable>false</repeatable>
+         <label>Tipo de documento:</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Selecione o tipo de documento.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Selecione o tipo de documento. &lt;/font&gt;</required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier/>
+         <repeatable>false</repeatable>
+         <label>Título:</label>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do documento. Recomenda-se preencher com a tradução do título da tese ou dissertação para o inglês para maior visibilidade do documento.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o título do documento. Recomenda-se preencher com a tradução do título da tese ou dissertação para o inglês para maior visibilidade do documento.&lt;/font&gt;</required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>alternative</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Título(s) alternativo(s):</label>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt;Informe o título alternativo. Recomenda-se preencher com 
+		 a tradução do título da tese ou dissertação para o inglês, para maior visibilidade do documento.</hint>
+         <required/>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>rights</dc-element>
+         <dc-qualifier/>
+         <repeatable>false</repeatable>
+         <label>Permissão de acesso:</label>
+         <input-type value-pairs-name="common_rights">dropdown</input-type> 
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o tipo de acesso ao documento</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o tipo de acesso ao documento.&lt;/font&gt;</required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>available</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Data de liberação para acesso:</label>
+         <input-type>date</input-type>
+         <hint>Data de disponibilidade do registro. Esta pode ser diferente  da disponibilização do texto completo, no caso dos embargos ou restrições de acesso ao documento completo.</hint>
+         <required/>
+      </field></row></form><form name="tdpage2"><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Data da defesa:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>date</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data de defesa do documento descrito, ou seja, a data de defesa da tese ou dissertação. </hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data de defesa do documento descrito, ou seja, a data de defesa da tese ou dissertação. &lt;/font&gt;</required>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Data da publicação:</label>
+		 <type-bind>Artigo de Periódico, Trabalho apresentado em evento, Livro, Capítulo de Livro, Relatório de Pesquisa, Outro</type-bind>
+         <input-type>date</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a data da publicação do documento descrito. </hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a data da publicação do documento descrito. &lt;/font&gt;</required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>creator</dc-element>
+         <dc-qualifier/>
+         <repeatable>true</repeatable>
+         <label>Autor(es):</label>
+		 <type-bind>Artigo de Periódico, Trabalho apresentado em evento, Livro, Capítulo de Livro, Relatório de Pesquisa, Outro</type-bind>
+         <input-type>name</input-type>
+         <hint>&lt;div class="alert alert-info"&gt;
+		 Descrição do &lt;strong&gt;AUTOR&lt;/strong&gt;
+		 &lt;/div&gt;
+		 &lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o nome do(s) autor(es), conforme o formato de citação.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o nome do(s) AUTOR(ES), conforme o formato de citação.&lt;/font&gt;
+		           </required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>creator</dc-element>
+         <dc-qualifier/>
+         <repeatable>false</repeatable>
+         <label>Autor:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>name</input-type>
+         <hint>&lt;div class="alert alert-info"&gt;
+		 Descrição do &lt;strong&gt;AUTOR&lt;/strong&gt;
+		 &lt;/div&gt;
+		 &lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o nome do autor, conforme o formato de citação.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o nome do AUTOR, conforme o formato de citação.&lt;/font&gt;
+		           </required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>creator</dc-element>
+         <dc-qualifier>Lattes</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do autor:</label>
+		  <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a URL do currículo lattes do autor.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a URL do currículo lattes do autor.&lt;/font&gt;
+		           </required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>creator</dc-element>
+         <dc-qualifier>ID</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Identificador único do autor:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do autor (CPF, ID de autor privativa da instituição ou passaporte).</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor1</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Primeiro orientador:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>name</input-type>
+         <hint>&lt;div class="alert alert-info"&gt;Descrição do &lt;strong&gt;PRIMEIRO ORIENTADOR&lt;/strong&gt;&lt;/div&gt;
+		       &lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o nome do primeiro orientador, conforme o formato de citação.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o nome do PRIMEIRO ORIENTADOR, conforme o formato de citação.&lt;/font&gt;</required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor1Lattes</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do primeiro orientador:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+		 <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe a URL do currículo lattes do primeiro orientador.</hint>
+        <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe a URL do currículo lattes do primeiro orientador.&lt;/font&gt;
+		           </required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor1ID</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Identificador único do primeiro orientador:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do primeiro orientador(CPF, ID de autor privativa da instituição ou passaporte).</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor2</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Segundo orientador:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>name</input-type>
+         <hint>&lt;div class="alert alert-info"&gt;Descrição do &lt;strong&gt;SEGUNDO ORIENTADOR&lt;/strong&gt;&lt;/div&gt;
+		       &lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o nome do segundo orientador, conforme o formato de citação.</hint>
+         <required/>
+        </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor2Lattes</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do orientador:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+		 <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do orientador.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor2ID</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Identificador único do orientador:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do orientador(CPF, ID de autor privativa da instituição ou passaporte).</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor-co1</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Primeiro coorientador:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>name</input-type>
+         <hint>&lt;div class="alert alert-info"&gt;Se houver, descrição do &lt;strong&gt;PRIMEIRO CO-ORIENTADOR&lt;/strong&gt;
+	           &lt;/div&gt;
+           	   &lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o nome do primeiro coorientador, conforme o formato de citação.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor-co1Lattes</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do primeiro coorientador:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind> 
+		 <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do primeiro coorientador.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor-co1ID</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Identificador único do primeiro coorientador:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do primeiro coorientador(CPF, ID de autor privativa da instituição ou passaporte).</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor-co2</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Segundo coorientador:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>name</input-type>
+         <hint>&lt;div class="alert alert-info"&gt;Se houver, descrição do &lt;strong&gt;SEGUNDO CO-ORIENTADOR&lt;/strong&gt;
+	           &lt;/div&gt;
+		       &lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o nome do segundo coorientador, conforme o formato de citação.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor-co2Lattes</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do segundo coorientador:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind> 
+		<input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do segundo coorientador.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>advisor-co2ID</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Identificador único do segundo coorientador:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do segundo coorientador (CPF, ID de autor privativa da instituição ou passaporte).</hint>
+         <required/>
+       </field></row></form><form name="tdpage3"><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee1</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Primeiro membro da banca:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>name</input-type>
+         <hint>&lt;div class="alert alert-info"&gt;Descrição do &lt;strong&gt;PRIMEIRO MEMBRO DA BANCA&lt;/strong&gt;
+               &lt;/div&gt;
+		       &lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o nome do primeiro membro da banca, conforme o formato de citação.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee1Lattes</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do primeiro membro da banca:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do primeiro membro da banca.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee1ID</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Identificador único do primeiro membro da banca</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do primeiro membro da banca(CPF, ID de autor privativa da instituição ou passaporte).</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee2</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Segundo membro da banca:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>name</input-type>
+         <hint>&lt;div class="alert alert-info"&gt;Se houver, descrição do &lt;strong&gt;SEGUNDO MEMBRO DA BANCA&lt;/strong&gt;
+		       &lt;/div&gt;
+		       &lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o nome do segundo membro da banca, conforme o formato de citação.
+			   </hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee2Lattes</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do segundo membro da banca:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint> &lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do segundo membro da banca.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee2ID</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Identificador único do segundo membro da banca</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do segundo membro da banca(CPF, ID de autor privativa da instituição ou passaporte).</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee3</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Terceiro membro da banca:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>name</input-type>
+         <hint>&lt;div class="alert alert-info"&gt;Se houver, descrição do &lt;strong&gt;TERCEIRO MEMBRO DA BANCA&lt;/strong&gt;
+		       &lt;/div&gt;
+		       &lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o nome do segundo membro da banca, conforme o formato de citação.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee3Lattes</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do terceiro membro da banca:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do terceiro membro da banca.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee3ID</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Identificador único do terceiro membro da banca</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do terceiro membro da banca(CPF, ID de autor privativa da instituição ou passaporte).</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee4</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Quarto membro da banca:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>name</input-type>
+         <hint>&lt;div class="alert alert-info"&gt;Se houver, descrição do &lt;strong&gt;QUARTO MEMBRO DA BANCA&lt;/strong&gt;
+		       &lt;/div&gt;
+		       &lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o nome do quarto membro da banca, conforme o formato de citação.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee4Lattes</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do quarto membro da banca:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do quarto membro da banca.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee4ID</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Identificador único do quarto quarto da banca</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do quarto membro da banca(CPF, ID de autor privativa da instituição ou passaporte).</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee5</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Quinto membro da banca:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>name</input-type>
+         <hint>&lt;div class="alert alert-info"&gt;Se houver, descrição do &lt;strong&gt;QUINTO MEMBRO DA BANCA&lt;/strong&gt;
+		       &lt;/div&gt;
+		       &lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o nome do quinto membro da banca, conforme o formato de citação.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee5Lattes</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>&lt;a href="http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar" target="_blank" &gt;URL do Currículo Lattes&lt;/a&gt; do quinto  membro da banca:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a URL do currículo lattes do quinto  membro da banca.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>referee5ID</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Identificador único do quinto quarto da banca</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o identificador único do quinto membro da banca(CPF, ID de autor privativa da instituição ou passaporte).</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Título do periódico:</label>
+		 <type-bind>Artigo de Periódico</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do periódico. &lt;/font&gt;</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o título do periódico.&lt;/font&gt;</required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Título do evento:</label>
+		 <type-bind>Trabalho apresentado em evento</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do evento. &lt;/font&gt;</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o título do evento.&lt;/font&gt;</required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Título da coleção:</label>
+		 <type-bind>Livro</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o título da coleção. &lt;/font&gt;</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Título da pesquisa:</label>
+		 <type-bind>Relatório de Pesquisa</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título da pesquisa. &lt;/font&gt;</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o título da pesquisa.&lt;/font&gt;</required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Título do livro:</label>
+		 <type-bind>Livropart</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do livro. &lt;/font&gt;</hint>
+         <required>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o título do livro. &lt;/font&gt;</required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Volume do periódico:</label>
+		 <type-bind>Artigo de Periódico</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o volume do periódico.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>issue</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Número de edição do periódico:</label>
+		 <type-bind>Artigo de Periódico</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o número de edição do periódico.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>issue</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Número de edição do evento:</label>
+		 <type-bind>Trabalho apresentado em evento</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o número de edição do evento.</hint>
+         <required>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o número de edição do evento.</required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>issue</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Número do livro na coleção:</label>
+		 <type-bind>Livro</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o número do livro na coleção.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>spage</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Página inicial:</label>
+		 <type-bind>Artigo de Periódico, Capítulo de Livro</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a página inicial.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>citation</dc-element>
+         <dc-qualifier>epage</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Página final:</label>
+		 <type-bind>Artigo de Periódico, Capítulo de Livro</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe a página final.</hint>
+         <required/>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>audience</dc-element>
+         <dc-qualifier>educationlevel</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Nível educacional:</label>
+		 <type-bind>Outro</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o nível educacional.</hint>
+         <required/>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier/>
+         <repeatable>true</repeatable>
+         <label>Objetivo:</label>
+		 <type-bind>Outro</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informar o objetivo. </hint>
+         <required/>
+       </field></row></form><form name="tdpage4"><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>publisher</dc-element>
+         <dc-qualifier/>
+         <repeatable>false</repeatable>
+         <label>Nome da instituição por extenso:</label>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Nome da instituição por extenso. &lt;/font&gt;</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Nome da instituição por extenso.&lt;/font&gt;</required>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>publisher</dc-element>
+         <dc-qualifier>initials</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Sigla da instituição:</label>
+		 <input-type>onebox</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt;Sigla da instituição.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Sigla da instituição.&lt;/font&gt;</required>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>publisher</dc-element>
+         <dc-qualifier>department</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Faculdade, Instituto ou Departamento:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+          <input-type>onebox</input-type> 
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Nome, por extenso, da unidade acadêmica: faculdade, escola, instituto, departamento ou estrutura equivalente.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Nome, por extenso, da unidade acadêmica: faculdade, escola, instituto, departamento ou estrutura equivalente.&lt;/font&gt;</required>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>publisher</dc-element>
+         <dc-qualifier>program</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Nome do programa de pós-graduação por extenso:</label>
+		 <type-bind>Tese, Dissertação</type-bind>
+         <input-type>onebox</input-type> 
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Nome(s) do(s) programa(s) de pós-graduação por extenso.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Nome(s) do(s) programa(s) de pós-graduação por extenso.&lt;/font&gt;</required>
+       </field></row><row><field>
+		 <dc-schema>dc</dc-schema>
+         <dc-element>publisher</dc-element>
+         <dc-qualifier>country</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>País:</label>
+          <input-type value-pairs-name="common_publisher_country">dropdown</input-type> 
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o país.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o país.&lt;/font&gt;</required>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>language</dc-element>
+         <dc-qualifier/>
+         <repeatable>false</repeatable>
+         <label>Idioma:</label>
+         <input-type value-pairs-name="common_languages">dropdown</input-type> 
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe o idioma em que o documento está escrito.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe o idioma em que o documento está escrito.&lt;/font&gt;</required>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>references</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Referências:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>textarea</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informes as referências citadas no documento. </hint>
+         <required/>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Identificador persistente:</label>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Preencha com as informações do identificador persistente utilizado.</hint>
+         <required/>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>isbn</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Informe o ISBN:</label>
+		 <type-bind>Livro, Capítulo de Livro</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o ISBN.</hint>
+         <required/>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>issn</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Informe o ISSN:</label>
+		 <type-bind>Artigo de Periódico, Trabalho apresentado em evento</type-bind>
+         <input-type>onebox</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informe o ISSN.</hint>
+         <required/>
+      </field></row></form><form name="tdpage5"><row><field><dc-schema>dc</dc-schema><dc-element>subject</dc-element><dc-qualifier/><repeatable>true</repeatable><label>Palavras-chave:</label><input-type>onebox</input-type><hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Informe as palavras-chave do documento descrito. Sugere-se também o uso de termos em inglês.</hint><required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Informe as palavras-chave do documento descrito. Sugere-se também o uso de termos em inglês.&lt;/font&gt;</required></field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>cnpq</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Áreas de conhecimento de acordo com tabela do CNPq:</label>
+		 <input-type>textarea</input-type> 
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt;Selecione a(s) área(s) de conhecimento correspondente(s), de acordo com tabela do CNPq.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Selecione a(s) área(s) de conhecimento correspondente(s), de acordo com tabela do CNPq. &lt;/font&gt;</required>
+<!-- Vocabulário decrito no arquivo cnpq.xml: 
+     https://github.com/ibict-br/TEDE/blob/dspace-4_x/dspace/config/controlled-vocabularies/cnpq.xml --> 
+ 	 <vocabulary>cnpq</vocabulary> 
+	</field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>resumo</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Resumo:</label>
+         <input-type>textarea</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Resumo do documento. Preencha o campo de acordo com o idioma do documento.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Resumo do documento. Preencha o campo de acordo com o idioma do documento. &lt;/font&gt;</required>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstract</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Abstract:</label>
+		 <input-type>textarea</input-type>
+         <hint>&lt;font color="red"&gt;CAMPO OBRIGATÓRIO: &lt;/font&gt; Abstract do documento. Preencha com o resumo em língua estrangeira.</hint>
+         <required>&lt;font color="red"&gt;&lt;strong&gt;CAMPO OBRIGATÓRIO:&lt;/strong&gt; Abstract do documento. Preencha com o resumo em língua estrangeira. &lt;/font&gt;</required>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>sponsorship</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Agência(s) de &lt;br&gt; fomento:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type value-pairs-name="common_sporsorship">dropdown</input-type> 
+		 <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Agência(s) de fomento que auxiliou(ram) o pesquisador.</hint>
+         <required/>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier/>
+         <repeatable>true</repeatable>
+         <label>Relação:</label>
+		 <type-bind>Tese, Dissertação, Trabalho de Conclusão de Curso</type-bind>
+         <input-type>textarea</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Outros recursos utilizados para elaboração deste documento. </hint>
+         <required/>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier/>
+         <repeatable>true</repeatable>
+         <label>Notas sobre o livro:</label>
+		 <type-bind>Livro</type-bind>
+         <input-type>textarea</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Informar o sumário do livro. </hint>
+         <required/>
+       </field></row><row><field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>citation</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Citação:</label>
+         <input-type>textarea</input-type>
+         <hint>&lt;font color="#449d44"&gt;CAMPO OPCIONAL: &lt;/font&gt; Referência bibliográfica do documento. Use as normas de acordo com a área, por exemplo: ABNT, APA, Vancouver.</hint>
+         <required/>
+       </field></row></form><form name="bitstream-metadata"><row><field><dc-schema>dc</dc-schema><dc-element>title</dc-element><dc-qualifier/><repeatable>false</repeatable><label>Title</label><input-type>onebox</input-type><hint>Enter the name of the file.</hint><required>You must enter a main title for this item.</required></field></row><row><field><dc-schema>dc</dc-schema><dc-element>description</dc-element><repeatable>true</repeatable><label>Description</label><input-type>textarea</input-type><hint>Enter a description for the file</hint><required/></field></row></form></form-definitions><form-value-pairs>
+
+   <value-pairs value-pairs-name="common_rights" dc-term="rights">
+     <pair>
+       <displayed-value>Acesso Aberto</displayed-value>
+       <stored-value>Acesso Aberto</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Acesso Embargado</displayed-value>
+       <stored-value>Acesso Embargado</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Acesso Restrito</displayed-value>
+       <stored-value>Acesso Restrito</stored-value>
+     </pair>
+   </value-pairs>
+
+    <value-pairs value-pairs-name="common_types" dc-term="type">
+	 <pair>
+       <displayed-value>Artigo de Periódico</displayed-value>
+       <stored-value>Artigo de Periódico</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Trabalho apresentado em evento</displayed-value>
+       <stored-value>Trabalho apresentado em evento</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Tese</displayed-value>
+       <stored-value>Tese</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Dissertação</displayed-value>
+       <stored-value>Dissertação</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Trabalho de Conclusão de Curso</displayed-value>
+       <stored-value>Trabalho de Conclusão de Curso</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Livro</displayed-value>
+       <stored-value>Livro</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Capítulo de Livro</displayed-value>
+       <stored-value>Capítulo de Livro</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Relatório de Pesquisa</displayed-value>
+       <stored-value>Relatório de Pesquisa</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Outro tipo de documento</displayed-value>
+       <stored-value>Outro</stored-value>
+     </pair>
+   </value-pairs>
+   
+   
+   <value-pairs value-pairs-name="common_publisher_country" dc-term="publisher_country">
+     <pair>
+       <displayed-value>Brasil</displayed-value>
+       <stored-value>Brasil</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>África do Sul</displayed-value>
+       <stored-value>Africa do Sul</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Alemanha</displayed-value>
+       <stored-value>Alemanha</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Angola</displayed-value>
+       <stored-value>Angola</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Argentina</displayed-value>
+       <stored-value>Argentina</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Austrália</displayed-value>
+       <stored-value>Austrália</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Áustria</displayed-value>
+       <stored-value>Austria</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Béligica</displayed-value>
+       <stored-value>Bélgica</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Bolívia</displayed-value>
+       <stored-value>Bolivia</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Canadá</displayed-value>
+       <stored-value>Canada</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Chile</displayed-value>
+       <stored-value>Chile</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>China</displayed-value>
+       <stored-value>China</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Colômbia</displayed-value>
+       <stored-value>Colombia</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Espanha</displayed-value>
+       <stored-value>Espanha</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Estados Unidos</displayed-value>
+       <stored-value>Estados unidos</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>França</displayed-value>
+       <stored-value>Franca</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Grã-Bretanha</displayed-value>
+       <stored-value>Gra-bretanha</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Holanda</displayed-value>
+       <stored-value>Holanda</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Itália</displayed-value>
+       <stored-value>Italia</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>México</displayed-value>
+       <stored-value>México</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Portugal</displayed-value>
+       <stored-value>Portugal</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Suíça</displayed-value>
+       <stored-value>Suica</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Uruguai</displayed-value>
+       <stored-value>Uruguai</stored-value>
+     </pair>
+	
+   </value-pairs>
+   
+ 
+<!-- <value-pairs value-pairs-name="common_ies" dc-term="publisher">
+     <pair>
+       <displayed-value>Insitituto Brasileiro de Informação em Ciência e Tecnologia</displayed-value>
+       <stored-value>Insitituto Brasileiro de Informação em Ciência e Tecnologia</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Instituto Brasileiro de Informação em Ciência e Tecnologia/Universidade Federal do Rio de Janeiro</displayed-value>
+       <stored-value>Instituto Brasileiro de Informação em Ciência e Tecnologia/Universidade Federal do Rio de Janeiro</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Instituto Brasileiro de Informação em Ciência e Tecnologia/Universidade Federal Fluminense</displayed-value>
+       <stored-value>Instituto Brasileiro de Informação em Ciência e Tecnologia/Universidade Federal Fluminense</stored-value>
+     </pair>
+   </value-pairs> -->
+   
+<!-- <value-pairs value-pairs-name="common_sigla_ies" dc-term="initials">
+     <pair>
+       <displayed-value>IBICT</displayed-value>
+       <stored-value>IBICT</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>IBICT/UFRJ</displayed-value>
+       <stored-value>IBICT/UFRJ</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>IBICT/UFF</displayed-value>
+       <stored-value>IBICT/UFF</stored-value>
+     </pair>
+  </value-pairs> -->
+   
+  <!-- <value-pairs value-pairs-name="common_department" dc-term="department">
+     <pair>
+       <displayed-value>Escola de Comunicação</displayed-value>
+       <stored-value>Escola de Comunicação</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Instituto de Arte e Comunicação Social</displayed-value>
+       <stored-value>Instituto de Arte e Comunicação Social</stored-value>
+     </pair>
+   </value-pairs> -->
+   
+  <!-- <value-pairs value-pairs-name="common_program" dc-term="program">
+     <pair>
+       <displayed-value>Programa de Pós-Graduação em Ciência da Informação (PPGCI)</displayed-value>
+       <stored-value>Programa de Pós-Graduação em Ciência da Informação</stored-value>
+     </pair>
+   </value-pairs> -->
+   
+  <value-pairs value-pairs-name="common_sporsorship" dc-term="program">
+     <pair>
+       <displayed-value>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)</displayed-value>
+       <stored-value>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)</displayed-value>
+       <stored-value>Conselho Nacional de Desenvolvimento Científico e Tecnológico</stored-value>
+     </pair>
+   </value-pairs>
+   
+   
+   
+
+   <!-- default language order: (from dspace 1.2.1)
+        "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "Outro", ""
+     -->
+   <value-pairs value-pairs-name="common_languages" dc-term="language">
+     <pair>
+       <displayed-value>Português</displayed-value>
+       <stored-value>por</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Inglês</displayed-value>
+       <stored-value>eng</stored-value>
+      </pair>
+     <pair>
+       <displayed-value>Francês</displayed-value>
+       <stored-value>fra</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Espanhol</displayed-value>
+       <stored-value>spa</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Alemão</displayed-value>
+       <stored-value>deu</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Catalão</displayed-value>
+       <stored-value>cat</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Holandês</displayed-value>
+       <stored-value>nld</stored-value>
+     </pair>
+	 <pair>
+       <displayed-value>Italiano</displayed-value>
+       <stored-value>ita</stored-value>
+     </pair>
+   </value-pairs> 
+   
+</form-value-pairs></input-forms>
